@@ -6,10 +6,3 @@ body {
 .hidden {
   display: none;
 }
-
-.hello {
-  display: flex;
-  font-size: 25px;
-  font-weight: 600;
-  justify-content: center;
-}
