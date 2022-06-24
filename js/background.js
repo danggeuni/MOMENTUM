@@ -19,8 +19,9 @@ const imgs = [
   "17.jpeg",
 ];
 
-const img = imgs[Math.floor(Math.random() * imgs.length)]; // 랜덤 이미지 선택
-const bgImg = document.createElement("img"); // img 태그 생성
-bgImg.src = `img/${img}`; // img 태그 소스 생성
+const todayImg = imgs[Math.floor(Math.random() * imgs.length)];
 
-document.body.appendChild(bgImg); // body에 img 태그 추가
+const imgMake = document.createElement("img");
+imgMake.setAttribute("src", `img/${todayImg}`);
+
+document.body.appendChild(imgMake);
